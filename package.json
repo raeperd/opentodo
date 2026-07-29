@@ -1,0 +1,28 @@
+{
+  "name": "@opentodo/workspace",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r --if-present build",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck",
+    "dev": "pnpm --filter @opentodo/web dev",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
+    "lint": "oxlint .",
+    "start": "pnpm --filter @opentodo/server start",
+    "start:desktop": "pnpm build && pnpm --filter @opentodo/desktop start",
+    "test": "vitest run",
+    "typecheck": "pnpm -r --if-present typecheck"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "catalog:",
+    "oxfmt": "0.60.0",
+    "oxlint": "1.75.0",
+    "svelte": "catalog:",
+    "vitest": "4.1.10"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "packageManager": "pnpm@11.16.0"
+}

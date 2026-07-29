@@ -1,0 +1,12 @@
+{
+  "ignorePatterns": [
+    "**/.svelte-kit/**",
+    "**/build/**",
+    "**/coverage/**",
+    "**/dist/**",
+    "issues/**",
+    "pnpm-lock.yaml",
+    "PROMPT.md"
+  ],
+  "svelte": true
+}
