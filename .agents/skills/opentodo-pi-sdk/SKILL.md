@@ -1,9 +1,11 @@
 ---
 name: opentodo-pi-sdk
-description: Embed the Pi coding agent SDK; load when creating agent sessions or runtimes, managing models and resources, streaming events, queueing prompts, replacing sessions, or testing Pi SDK integrations.
+description: Use when explicitly evaluating, adding, or changing a Pi coding agent SDK integration, including its sessions, models, events, resources, and tests.
 ---
 
 Use the documentation shipped with the installed Pi package as the API authority.
+
+This imported skill does not select Pi as an OpenTodo dependency. Apply it only to Pi work in the accepted scope. If the package is absent, report that and use version-pinned official documentation for evaluation; add it only when implementation calls for it.
 
 ## Process
 

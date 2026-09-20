@@ -5,6 +5,8 @@ description: Use Drizzle ORM with SQLite and node:sqlite; load when defining SQL
 
 Use the installed Drizzle ORM API without assuming a Drizzle Kit workflow.
 
+This guide covers Drizzle with SQLite through `node:sqlite`. Apply it when that driver is installed or selected in the accepted scope. For libsql/Turso or another driver, verify its own transaction and migration APIs; this skill does not choose OpenTodo's database.
+
 ## Process
 
 1. Identify the installed boundary.

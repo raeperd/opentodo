@@ -1,9 +1,11 @@
 ---
 name: opentodo-orpc
-description: Build type-safe APIs with oRPC; load when defining contracts, implementing procedures, creating RPC handlers or clients, composing middleware, handling errors, or testing oRPC transports.
+description: Use when explicitly evaluating, adding, or changing oRPC contracts, procedures, handlers, clients, middleware, errors, or transport tests.
 ---
 
 Use installed oRPC packages as the type-safe boundary from contract to transport.
+
+Apply this guide when the accepted work uses oRPC. For Effect RPC or another transport, follow that implementation's own contracts and guidance. The presence of this skill does not choose OpenTodo's API transport.
 
 ## Process
 
