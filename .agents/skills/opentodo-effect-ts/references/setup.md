@@ -6,7 +6,7 @@ This setup task is required when the shared Effect explorer checkout is missing.
 
 The read-only Effect source checkout was not found in the shared repo-explorer store.
 
-Use the `repo-explorer-clone` skill to add the GitHub repository `Effect-TS/effect-smol`, then resume Effect work after that workflow has cloned, verified, and locked the checkout.
+Use the `repo-explorer` skill when available to add the GitHub repository `Effect-TS/effect-smol`. Otherwise ask the user to prepare the canonical checkout described below. Resume Effect work after the checkout has been verified; this skill treats it as inspection-only without changing filesystem permissions.
 
 ## Expected Location
 
@@ -21,12 +21,12 @@ The expected canonical path is `$EFFECT_REPO`. Do not use sibling revision workt
 
 ## Verification
 
-The `repo-explorer-clone` workflow must verify that the checkout:
+Verify that the checkout:
 
 - is a clean Git worktree with a materialized default branch
 - uses `https://github.com/Effect-TS/effect-smol.git` as its canonical origin URL
-- records `origin` as a promisor remote with the `blob:none` partial clone filter
-- is locked read-only together with the explorer cache after setup
+- records `origin` as a promisor remote with the `blob:none` partial clone filter when newly cloned; existing full clones can be reused
+- is readable at the canonical path without changing permissions on the checkout or shared cache
 
 ## Rules
 
