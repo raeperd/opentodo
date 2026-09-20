@@ -4,7 +4,7 @@ As of Svelte 5.36, you can use the `await` keyword inside your components in thr
 - inside `$derived(...)` declarations
 - inside your markup
 
-This feature is currently experimental, and you must opt in by adding the `experimental.async` option wherever you [configure](/docs/kit/configuration) Svelte, usually `svelte.config.js`:
+This feature is currently experimental, and you must opt in by adding the `experimental.async` option wherever you [configure](https://svelte.dev/docs/kit/configuration) Svelte, usually `svelte.config.js`:
 
 ```js
 /// file: svelte.config.js
@@ -69,15 +69,15 @@ let a = $derived(await one());
 let b = $derived(await two());
 ```
 
-> [!NOTE] If you write code like this, expect Svelte to give you an [`await_waterfall`](runtime-warnings#Client-warnings-await_waterfall) warning
+> [!NOTE] If you write code like this, expect Svelte to give you an [`await_waterfall`](https://svelte.dev/docs/svelte/runtime-warnings#Client-warnings-await_waterfall) warning
 
 ## Indicating loading states
 
-To render placeholder UI, you can wrap content in a `<svelte:boundary>` with a [`pending`](svelte-boundary#Properties-pending) snippet. This will be shown when the boundary is first created, but not for subsequent updates, which are globally coordinated.
+To render placeholder UI, you can wrap content in a `<svelte:boundary>` with a [`pending`](https://svelte.dev/docs/svelte/svelte-boundary#Properties-pending) snippet. This will be shown when the boundary is first created, but not for subsequent updates, which are globally coordinated.
 
-After the contents of a boundary have resolved for the first time and have replaced the `pending` snippet, you can detect subsequent async work with [`$effect.pending()`]($effect#$effect.pending). This is what you would use to display a "we're asynchronously validating your input" spinner next to a form field, for example.
+After the contents of a boundary have resolved for the first time and have replaced the `pending` snippet, you can detect subsequent async work with [`$effect.pending()`](https://svelte.dev/docs/svelte/$effect#$effect.pending). This is what you would use to display a "we're asynchronously validating your input" spinner next to a form field, for example.
 
-You can also use [`settled()`](svelte#settled) to get a promise that resolves when the current update is complete:
+You can also use [`settled()`](https://svelte.dev/docs/svelte/svelte#settled) to get a promise that resolves when the current update is complete:
 
 ```js
 import { tick, settled } from 'svelte';
@@ -103,7 +103,7 @@ async function onclick() {
 
 ## Error handling
 
-Errors in `await` expressions will bubble to the nearest [error boundary](svelte-boundary).
+Errors in `await` expressions will bubble to the nearest [error boundary](https://svelte.dev/docs/svelte/svelte-boundary).
 
 ## Server-side rendering
 
@@ -125,7 +125,7 @@ If a `<svelte:boundary>` with a `pending` snippet is encountered during SSR, tha
 
 ## Forking
 
-The [`fork(...)`](svelte#fork) API, added in 5.42, makes it possible to run `await` expressions that you _expect_ to happen in the near future. This is mainly intended for frameworks like SvelteKit to implement preloading when (for example) users signal an intent to navigate.
+The [`fork(...)`](https://svelte.dev/docs/svelte/svelte#fork) API, added in 5.42, makes it possible to run `await` expressions that you _expect_ to happen in the near future. This is mainly intended for frameworks like SvelteKit to implement preloading when (for example) users signal an intent to navigate.
 
 ```svelte
 <script>

@@ -8,7 +8,7 @@
 {#snippet name(param1, param2, paramN)}...{/snippet}
 ```
 
-Snippets, and [render tags](@render), are a way to create reusable chunks of markup inside your components. Instead of writing duplicative code like this...
+Snippets, and [render tags](https://svelte.dev/docs/svelte/@render), are a way to create reusable chunks of markup inside your components. Instead of writing duplicative code like this...
 
 ```svelte
 {#each images as image}
@@ -269,8 +269,8 @@ Snippets declared at the top level of a `.svelte` file can be exported from a `<
 
 ## Programmatic snippets
 
-Snippets can be created programmatically with the [`createRawSnippet`](svelte#createRawSnippet) API. This is intended for advanced use cases.
+Snippets can be created programmatically with the [`createRawSnippet`](https://svelte.dev/docs/svelte/svelte#createRawSnippet) API. This is intended for advanced use cases.
 
 ## Snippets and slots
 
-In Svelte 4, content can be passed to components using [slots](legacy-slots). Snippets are more powerful and flexible, and so slots have been deprecated in Svelte 5.
+In Svelte 4, content can be passed to components using [slots](https://svelte.dev/docs/svelte/legacy-slots). Snippets are more powerful and flexible, and so slots have been deprecated in Svelte 5.
