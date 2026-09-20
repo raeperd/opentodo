@@ -1,3 +1,7 @@
+# Historical web-first plan
+
+This prompt is retained as planning history. Its architecture, phase order, and execution instructions are superseded by the [desktop-first v0.0.1 technical spec](docs/v0.0.1-tech-spec.md). Use that spec for new work; the `issues/` files below are historical plans, not the desktop implementation queue.
+
 # OpenTodo — Ralph Loop Prompt
 
 You are building **OpenTodo**, an open-source, keyboard-driven todo application with Linear-inspired UI.
