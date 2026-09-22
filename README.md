@@ -10,10 +10,9 @@ application foundation shared with the Pidex stack:
 - strict TypeScript, oxlint, oxfmt, and Vitest
 - GitHub Actions verification for tests, formatting, linting, types, and builds
 
-The [v0.0.1 technical spec](docs/v0.0.1-tech-spec.md) defines the desktop-first implementation
-target: a local, single-user macOS app with SQLite persistence and no account or network requirement.
-Database, API, and desktop acceptance tests will be added with the features that need them.
-The spec supersedes the web-first architecture and execution instructions in `PROMPT.md` and `issues/`.
+The desktop-first target is a local, single-user macOS app with SQLite persistence and no
+account or network requirement. Database, API, and desktop acceptance tests will be added
+with the features that need them.
 
 ## Development
 
