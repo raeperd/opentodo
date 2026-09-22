@@ -9,7 +9,8 @@ Use this workflow for requested GitHub milestone creation or updates. Prepare th
 
 2. Prepare the full description.
    - Write actual Markdown to `.scratch/<milestone-slug>/description.md`. Use this as a temporary publication artifact, not a second maintained spec.
-   - When migrating an existing spec, remove its opening title heading because GitHub already displays the milestone title. Start with a plain-text summary, retain section headings, accepted decisions, and acceptance coverage, correct stale status claims using verified evidence, and convert relative links to absolute GitHub URLs.
+   - When migrating an existing spec, remove its opening title heading because GitHub already displays the milestone title. Start with a plain-text summary, retain shared scope, decisions, and release criteria, correct stale status claims using verified evidence, and convert relative links to absolute GitHub URLs.
+   - GitHub already lists assigned issues. Omit issue inventories, status checklists, and per-issue acceptance tables from the description. Before removing the only copy of detailed acceptance criteria, preserve them in existing issue bodies or temporary issue drafts; creating or updating issues still requires the user's authorization.
    - Re-read the milestone before updating; reconcile intervening changes rather than overwriting them with an older draft.
 
 3. Publish with a file-backed field.
@@ -30,7 +31,7 @@ Use this workflow for requested GitHub milestone creation or updates. Prepare th
    - Record the returned number and URL. If creation has an uncertain result, query existing milestones before retrying. Stop and report persistent API or permission failures with the draft preserved.
 
 4. Verify and report.
-   - Fetch the milestone again and compare its full description with the prepared file; verify it begins with prose rather than a duplicate title heading, and that title, state, and due date changed only as intended.
+   - Fetch the milestone again and compare its full description with the prepared file; verify it begins with prose, contains no duplicate issue inventory, and that title, state, and due date changed only as intended.
    - For migrations, verify publication before replacing old repository specs with short links to the milestone. Keep durable repository guidance in docs.
    - Report the verified milestone URL. Issue publication is a separate requested operation through [opentodo-create-issues](../../opentodo-create-issues/SKILL.md).
 

@@ -6,6 +6,8 @@ All 15 skills are retained under `opentodo-*`, including their references and ag
 
 Plan releases with [opentodo-create-milestone](opentodo-create-milestone/SKILL.md), invoked as `$opentodo-create-milestone`. GitHub milestone descriptions are the canonical implementation plans. Requested creation and updates use `gh api`; discussion-only drafts remain temporary under `.scratch/`. Publish issues separately through [opentodo-create-issues](opentodo-create-issues/SKILL.md).
 
+Milestone descriptions hold shared scope, architecture, and delivery rules. GitHub's native issue list tracks the work; issue bodies hold detailed acceptance criteria. Issue publication does not add a duplicate issue list to the description.
+
 This planning policy follows [Pidex PR #197](https://github.com/raeperd/pidex/pull/197) at `60d06e739a979748c3981cf4fb7f5dec9ca72539`, with OpenTodo skill names and existing local adaptations preserved. Repository plan files retain only links to migrated milestones. Keep the root README focused on the application and its commands, without issue or milestone references.
 
 Technology guides apply to dependencies used or explicitly considered by the accepted work. Retaining the Pi SDK, oRPC, Drizzle, and Playwright guides does not add those dependencies or settle the OpenTodo architecture. Reference research uses Pidex for the shared stack and selects other sources according to the task.

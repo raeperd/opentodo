@@ -18,7 +18,7 @@ Use this branch only for tracker creation or updates requested by the user. Prep
 3. Resolve links and relationships.
    - Replace local blocker links with actual tracker URLs. Use native blocking relationships where supported; a parent/child relationship does not substitute for a dependency.
    - Resolve remaining forward references after IDs exist. Sync local draft links and retain the local-to-tracker mapping.
-   - When publishing issues from the milestone plan, replace its temporary IDs with real issue links, including testing and workflow references, through the milestone publication workflow. Preserve unrelated description content; do not create a duplicate repository spec or documentation PR for this synchronization.
+   - Verify milestone assignment and GitHub blocking relationships. The native milestone issue list records published work; keep issue links, status, and detailed acceptance criteria out of the milestone description. Preserve its shared plan, updating it through the milestone publication workflow only when an authorized scope or shared-decision change requires it.
    - Completion: all issue references point to the intended work, with no invented IDs or unresolved local blocker paths.
 
 4. Read back and report.
