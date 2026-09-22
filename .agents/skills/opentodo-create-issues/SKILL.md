@@ -37,7 +37,7 @@ Turn agreed work into small, independently understandable issues. Default to loc
 
 5. Publish when requested.
    - For explicit tracker creation or updates, follow [publishing](references/publishing.md) to reuse existing issues, resolve real IDs, and verify dependencies.
-   - Carry the agreed milestone into publication. Reuse it, or create it with its agreed description through the milestone skill when issue publication requires a missing milestone. Assign every in-scope issue to it; keep issue titles outcome-focused without a version prefix.
+   - Carry the agreed milestone into publication. Reuse it, or follow [milestone publication](../opentodo-create-milestone/references/publishing.md) to create it with its agreed description when issue publication requires a missing milestone. Assign every in-scope issue to it; keep issue titles outcome-focused without a version prefix.
    - Completion: the requested issues are verified in the tracker, or specific failed operations are reported with successful work preserved.
 
 ## Issue template
