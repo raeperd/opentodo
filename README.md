@@ -10,8 +10,9 @@ application foundation shared with the Pidex stack:
 - strict TypeScript, oxlint, oxfmt, and Vitest
 - GitHub Actions verification for tests, formatting, linting, types, and builds
 
-Database, authentication, API, and packaging dependencies will be added with the features that
-need them.
+The desktop-first target is a local, single-user macOS app with SQLite persistence and no
+account or network requirement. Database, API, and desktop acceptance tests will be added
+with the features that need them.
 
 ## Development
 

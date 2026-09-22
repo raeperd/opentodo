@@ -1,0 +1,6 @@
+interface:
+  display_name: "OpenTodo Create Milestone"
+  short_description: "Create and update GitHub milestone plans with gh CLI"
+  default_prompt: "Use $opentodo-create-milestone to create or update the agreed GitHub milestone with gh CLI. Keep shared scope, architecture, and delivery rules in its description; use GitHub's native issue list and keep per-issue acceptance criteria in issue bodies."
+policy:
+  allow_implicit_invocation: false
