@@ -1,3 +1,7 @@
+# Historical web-first plan
+
+This prompt is retained as planning history. Its architecture, phase order, and execution instructions are superseded by the [v0.0.1 milestone description](https://github.com/raeperd/opentodo/milestone/1). Use that plan for new work; the `issues/` files below are historical plans, not the desktop implementation queue.
+
 # OpenTodo — Ralph Loop Prompt
 
 You are building **OpenTodo**, an open-source, keyboard-driven todo application with Linear-inspired UI.
